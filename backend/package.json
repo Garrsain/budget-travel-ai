@@ -20,7 +20,9 @@
     "cors": "^2.8.5",
     "dotenv": "^16.3.1",
     "mongoose": "^7.6.1",
-    "winston": "^3.13.0"
+    "winston": "^3.13.0",
+    "axios": "^1.6.7",
+    "body-parser": "^1.20.2"
   },
   "author": "",
   "license": "ISC"
