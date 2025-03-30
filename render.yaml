@@ -1,20 +1,10 @@
-name: budget-travel-platform
-region: us-east-1
 services:
-  - name: frontend
-    type: static
-    buildCommand: cd frontend && npm install && npm run build
-    publishPath: frontend/build
-    routes:
-      - path: /*
-        responseCode: 200
-        file: index.html
-  
   - name: backend
-    type: api
+    type: web
+    env: node
     buildCommand: cd backend && npm install
     startCommand: cd backend && node src/app.js
-    env:
+    envVars:
       - key: NODE_ENV
         value: production
       - key: PORT
