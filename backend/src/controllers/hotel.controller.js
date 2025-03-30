@@ -59,7 +59,7 @@ function getMockHotelDetails(hotelId) {
     'hotel1': {
       hotel_id: 'hotel1',
       name: 'Urban Budget Hotel',
-      description: 'Urban Budget Hotel offers comfortable accommodations in the heart of New York City. This charming property features simple but well-appointed rooms, perfect for travelers looking to explore the city on a budget. Located just a short walk from major attractions and public transportation, it provides an ideal base for your city adventure.',
+      description: "Urban Budget Hotel offers comfortable accommodations in the heart of New York City. This charming property features simple but well-appointed rooms, perfect for travelers looking to explore the city on a budget. Located just a short walk from major attractions and public transportation, it provides an ideal base for your city adventure.",
       address: {
         street: '123 Budget Street',
         city: 'New York',
@@ -112,7 +112,7 @@ function getMockHotelDetails(hotelId) {
         },
         {
           hotel_id: 'hotel3',
-          name: 'Backpacker\'s Paradise',
+          name: "Backpacker's Paradise",
           thumbnail: 'https://via.placeholder.com/300x200?text=Backpackers+Paradise',
           price: 25,
           currency: 'USD',
@@ -131,7 +131,7 @@ function getMockHotelDetails(hotelId) {
     'hotel2': {
       hotel_id: 'hotel2',
       name: 'Cozy Stay Inn',
-      description: 'Cozy Stay Inn provides a warm and welcoming atmosphere for budget travelers in New York City. With its convenient location and comfortable rooms, it's a perfect choice for those looking to explore the city without breaking the bank. The friendly staff and clean facilities ensure a pleasant stay for all guests.',
+      description: "Cozy Stay Inn provides a warm and welcoming atmosphere for budget travelers in New York City. With its convenient location and comfortable rooms, it's a perfect choice for those looking to explore the city without breaking the bank. The friendly staff and clean facilities ensure a pleasant stay for all guests.",
       address: {
         street: '456 Comfort Avenue',
         city: 'New York',
@@ -189,7 +189,7 @@ function getMockHotelDetails(hotelId) {
         },
         {
           hotel_id: 'hotel5',
-          name: 'Traveler\'s Rest Hotel',
+          name: "Traveler's Rest Hotel",
           thumbnail: 'https://via.placeholder.com/300x200?text=Travelers+Rest+Hotel',
           price: 65,
           currency: 'USD',
@@ -198,8 +198,6 @@ function getMockHotelDetails(hotelId) {
       ]
     }
   };
-  
-  // Add more mock hotels as needed
   
   return hotels[hotelId];
 }
