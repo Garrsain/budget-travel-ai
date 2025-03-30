@@ -1,0 +1,20 @@
+{
+  "name": "budget-travel-platform",
+  "version": "1.0.0",
+  "description": "AI-powered budget travel platform for finding the best hotel deals",
+  "main": "src/app.js",
+  "scripts": {
+    "start": "node src/app.js",
+    "dev": "nodemon src/app.js",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [
+    "travel",
+    "budget",
+    "hotel",
+    "deals",
+    "ai"
+  ],
+  "author": "",
+  "license": "ISC"
+}

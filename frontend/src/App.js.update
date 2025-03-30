@@ -1,0 +1,5 @@
+// Add AdminControlPanel to App.js routes
+import AdminControlPanel from './pages/AdminControlPanel';
+
+// In the routes section:
+<Route path="/admin" element={<AdminControlPanel />} />

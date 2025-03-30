@@ -1,0 +1,25 @@
+name: budget-travel-platform
+region: us-east-1
+services:
+  - name: frontend
+    type: static
+    buildCommand: cd frontend && npm install && npm run build
+    publishPath: frontend/build
+    routes:
+      - path: /*
+        responseCode: 200
+        file: index.html
+  
+  - name: backend
+    type: api
+    buildCommand: cd backend && npm install
+    startCommand: cd backend && node src/app.js
+    env:
+      - key: NODE_ENV
+        value: production
+      - key: PORT
+        value: 8080
+      - key: BOOKING_AFFILIATE_ID
+        value: demo-affiliate-id
+      - key: BOOKING_API_KEY
+        value: demo-api-key
